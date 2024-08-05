@@ -10,7 +10,7 @@
 .navbar {
   background-color: #fd656d;
   padding: 10px;
-  border-radius: 10px; /* Adjust border-radius as needed */
+  border-radius: 10px;
 }
 
 .navbar ol {
@@ -25,13 +25,27 @@
   cursor: pointer;
   font-size: 18px;
   color: white;
+  background-color: #fcbb43;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .navbar li:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .navbar ol {
+      flex-direction: column;
+      align-items: center;
+  }
 
+  .navbar li {
+      margin-bottom: 10px;
+  }
+}
+
+/* Spinner Styles */
 #spinner {
   opacity: 0;
   visibility: hidden;
@@ -45,18 +59,66 @@
   opacity: 1;
 }
 
-@media (max-width: 991.98px) {
-  .sticky-lg-top.vh-100 {
-    height: 100% !important;
+/* Back-to-top Button Styles */
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  right: 30px;
+  bottom: 30px;
+  transition: background 0.001s !important;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+
+.back-to-top i {
+  color: var(--primary);
+}
+
+.back-to-top i:hover {
+  color: var(--dark);
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
   }
 }
 
+@media (max-width: 768px) {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+/* Font Weight Classes */
 .fw-semi-bold {
   font-weight: 600;
 }
 
 .fw-medium {
   font-weight: 500;
+}
+
+/* Button Styles */
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-square {
@@ -74,71 +136,17 @@
   height: 50px;
 }
 
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .btn.btn-primary {
   color: var(--dark);
 }
 
+/* Cursor Animation Styles */
 .typed-cursor {
   font-size: 25px;
   color: var(--light);
 }
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 1;
-  font-size: 30px;
-  right: 30px;
-  bottom: 30px;
-  transition: background 0.001s !important;
-  z-index: 11;
-}
-
-.back-to-top i {
-  color: var(--primary);
-}
-
-.back-to-top i:hover {
-  color: var(--dark);
-}
-
-.back-to-top {
-  -webkit-animation: action 1s infinite alternate;
-  animation: action 1s infinite alternate;
-}
-
-@-webkit-keyframes action {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes action {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-15px);
-  }
-}
-
+/* Title Decoration */
 .title {
   position: relative;
 }
@@ -165,15 +173,17 @@
   background: var(--light);
 }
 
+/* Progress Bar Styles */
 .progress {
   height: 5px;
 }
 
 .progress .progress-bar {
-  width: 0px;
+  width: 0;
   transition: 2s;
 }
 
+/* Service Item Styles */
 .service-item {
   padding: 30px;
   text-align: center;
@@ -194,6 +204,26 @@
 .service-item:hover i {
   background: var(--primary);
   color: var(--light);
+}
+
+/* Portfolio Styles */
+.portfolio {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.portfolio-item {
+  min-width: 200px;
+  background: var(--secondary);
+  border: 1px solid var(--dark);
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .portfolio-item .portfolio-btn {
@@ -226,6 +256,25 @@
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-item {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-btn {
+    font-size: 30px !important; /* Adjust size for very small screens */
+  }
+}
+
+/* Testimonial Carousel Styles */
 .testimonial-carousel .owl-dots {
   margin-top: 25px;
   text-align: center;
@@ -243,14 +292,14 @@
   background: var(--primary);
 }
 
-/* Override background color for input fields */
+/* Contact Form Styles */
 #contactForm .form-control {
-  background-color: var(--light) !important;
+  background-color: #d4ccb5 !important; /* Background for contact message */
+  color: black !important;
 }
 
-/* Override background color for the button */
 #contactForm .btn-primary {
-  background-color: var(--light) !important;
+  background-color: #d4ccb5 !important; /* Background for send button */
 }
 
 #contactForm .btn-primary:hover {
@@ -258,41 +307,199 @@
   color: var(--light) !important;
 }
 
-/* Add space between the two sections */
+/* Section Styling */
 .py-5.border-bottom.wow.fadeInUp {
-  margin-bottom: 40px !important; /* Adjust the value as needed */
-   background-color: #abb8eb;                                              /*background main page margin*/
-   width: 105%; /* Adjust the value as needed for the width of the box */
+  margin-bottom: 60px !important;
+  background-color: #cadef0;
+  background-image: url('https://images.unsplash.com/photo-1602498456745-e9503b30470b?dpr=1&h=363.1372549019608&w=463&auto=format&fit=crop&q=60&ixlib=rb-4.0.3');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.portfolio-item img {
+  max-width: 100%; /* Ensures images fit within their containers */
+}
+.portfolio-container {
+  margin: 0 auto; /* Centers the container */
+  padding: 0; /* Adjust if needed */
+}
+
+.portfolio-item {
+  box-sizing: border-box; /* Ensures padding/margin do not affect width */
 }
 
 
-
-
-.testimonial-carousel .owl-dots {
-  margin-top: 25px;
-  text-align: center;
+.py-5.border-bottom.wow.fadeInUp.scrolled {
+  background-image: 
+      linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+      ), 
+      url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE0fHxmb3Jlc3R8ZW58MHx8fHwxNjQ5NDMzMzY4&ixlib=rb-4.0.3&q=80&w=1080');
 }
 
-.testimonial-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 15px;
-  height: 15px;
-  background: #f1efeb;
+/* General Styling */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.testimonial-carousel .owl-dot.active {
-  background: var(--primary);
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-/* Override background color for input fields */
-#contactForm .form-control {
-  background-color:#d4ccb5  !important;/*send msg background for contact me  #eee2e2*/
-  color: black !important;
+/* Blinking text animation */
+.blink-text {
+    animation: blink 1s infinite;
 }
 
-/* Override background color for the button */
-#contactForm .btn-primary {
-  background-color: #d4ccb5 !important; /*send msg background    rgb(236, 235, 230) */
+/* Reduce space container */
+.reduce-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -40px;
+}
+
+/* Custom image styling */
+.custom-img {
+    transform: translateX(100px);
+}
+
+/* Portfolio item styling */
+.portfolio-item {
+    position: relative;
+}
+
+/* Portfolio button styling */
+.portfolio-btn {
+    font-size: 110px !important; /* Adjust the size as needed */
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+/* Show portfolio button on hover */
+.portfolio-item:hover .portfolio-btn {
+    opacity: 1 !important;
+}
+
+/* Styling for portfolio-links */
+.portfolio-links a.btn-secondary,
+.portfolio-links a.btn-primary {
+    color: #fff; /* Text color */
+    background-color: rgb(41, 53, 49); /* Background color */
+    margin-right: 10px; /* Adjust as needed for spacing between buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for portfolio-links */
+.portfolio-links a.btn-secondary:hover,
+.portfolio-links a.btn-primary:hover {
+    background-color: #007bff; /* Set your desired background color on hover */
+    color: #fff; /* Set your desired text color on hover */
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(20deg, #1e1a1f 1%, #93a8ee 70%, #c2a9c4 90%) !important;
+    margin: 0 !important;
+}
+
+/* Image container styling */
+.image-container {
+    width: 425px; /* 50% of the width */
+    height: 490px;
+    overflow: hidden;
+}
+
+/* Cropped image styling */
+.cropped-image {
+    width: 850px;
+    height: 490px;
+    margin-right: -90%; /* Shift the image to the left by 50% */
+}
+
+/* Styling for portfolio item image */
+.portfolio-item .img-fluid {
+    height: 200px; /* Adjust the height according to your design */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.changeMargin{
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .center-container {
+        padding: 10px;
+    }
+    
+    .custom-img {
+        transform: translateX(0);
+    }
+    
+    .image-container {
+        width: 100%; /* Full width on smaller screens */
+        height: auto;
+    }
+    
+    .cropped-image {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+    
+    .portfolio-btn {
+        font-size: 50px !important; /* Adjust size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-btn {
+        font-size: 30px !important; /* Adjust size for very small screens */
+    }
+}
+
+.glossy-text {
+    color: #9b4ac0; /* Primary color */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em; /* Adjust the font size as needed */
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(70deg, #b1619d, #5e1083);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes sparkle {
+    0% { text-shadow: 0 0 0 rgba(255, 255, 255, 0); }
+    80% { text-shadow: 0 0 4px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4); }
+    100% { text-shadow: 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+.sparkling-text {
+    animation: sparkle 1.5s infinite;
+    color: #27509c; /* Your desired text color */
 }
 
