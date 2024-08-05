@@ -31,121 +31,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <style>
-        /* General Styling */
-        .center-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
 
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        /* Blinking text animation */
-        .blink-text {
-            animation: blink 1s infinite;
-        }
-
-        /* Reduce space container */
-        .reduce-space {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: -40px;
-        }
-
-        /* Custom image styling */
-        .custom-img {
-            transform: translateX(100px);
-        }
-
-        /* Portfolio item styling */
-        .portfolio-item {
-            position: relative;
-        }
-
-        /* Portfolio button styling */
-        .portfolio-btn {
-            font-size: 110px !important; /* Adjust the size as needed */
-            position: absolute !important;
-            top: 50% !important;
-            left: 50% !important;
-            transform: translate(-50%, -50%) !important;
-            opacity: 0 !important;
-            transition: opacity 0.3s ease !important;
-        }
-
-        /* Show portfolio button on hover */
-        .portfolio-item:hover .portfolio-btn {
-            opacity: 1 !important;
-        }
-
-        /* Styling for portfolio-links */
-        .portfolio-links a.btn-secondary,
-        .portfolio-links a.btn-primary {
-            color: #fff; /* Text color */
-            background-color: rgb(41, 53, 49); /* Background color */
-            margin-right: 10px; /* Adjust as needed for spacing between buttons */
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        /* Hover effect for portfolio-links */
-        .portfolio-links a.btn-secondary:hover,
-        .portfolio-links a.btn-primary:hover {
-            background-color: #007bff; /* Set your desired background color on hover */
-            color: #fff; /* Set your desired text color on hover */
-        }
-
-        /* Body styling */
-        body {
-            background: linear-gradient(20deg, #161513 5%, #4568dc 70%, #b06ab3 80%) !important;
-            margin: 0 !important;
-            /*background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 13.18%), linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 19.88%), 
-                    radial-gradient( 60.66% 10.67% at 122.74% 81.52%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100% ) , 
-                    radial-gradient( 83.35% 14.69% at 0% 78.03%, rgba(176, 165, 228, 0.8) 0%, rgba(176, 165, 228, 0) 100% ), radial-gradient( 87.9% 21.87% at 100% 60.49%, rgba(176, 165, 228, 0.5) 0%,
-                     rgba(176, 165, 228, 0) 100% ), radial-gradient( 89.02% 19.65% at 0% 37.35%, rgba(176, 165, 228, 0.8) 0%, rgba(176, 165, 228, 0) 100% ), radial-gradient( 78.37% 5.58% at 0% 12.6%,
-                      #b0a5e4 0%, rgba(176, 165, 228, 0) 100% ), radial-gradient( 64.69% 9.93% at 100% 12.6%, #b0a5e4 0%, rgba(176, 165, 228, 0) 100% ), linear-gradient(180deg, #caeaff 0%, #8fe6c7 100%);*/
-                
-        }
-
-        /* Image container styling */
-        .image-container {
-            width: 425px; /* 50% of the width */
-            height: 490px;
-            overflow: hidden;
-        }
-
-        /* Cropped image styling */
-        .cropped-image {
-            width: 850px;
-            height: 490px;
-            margin-right: -90%; /* Shift the image to the left by 50% */
-        }
-
-        /* Styling for portfolio item image */
-        .portfolio-item .img-fluid {
-            height: 200px; /* Adjust the height according to your design */
-            object-fit: cover; /* Maintain aspect ratio and cover the container */
-        }
-
-        .changeMargin{
-            margin-right: 15px !important;
-            margin-left: 15px !important;
-        }
-    </style>
 </head>
 
 
@@ -167,20 +53,24 @@
                             <img src="img/git3.gif" alt="Cropped Image" class="cropped-image">
                         </div>
 
-                        <h1 class="text-primary mt-2" style="color:#D79922 !important;font-family:Arial, Helvetica, sans-serif ;">Elilarasi</h1>
-                        <div class="mb-4" style="height: 22px;">
-                            <h4 class="typed-text-output d-inline-block text-light" style="color: #d2cdbd !important;"></h4>
-                            <div class="typed-text d-none">Full Stack Developer, Front End Developer</div>
-                        </div>
-                        <div class="d-flex justify-content-center mt-auto mb-3">
+                        <h1 class="glossy-text mt-2">Elilarasi</h1>
+
+                        <div class="mb-4 custom-gap" style="height: 22px;">
+                            <h4 class="typed-text-output d-inline-block text-light sparkling-text" style="color: #27509c !important;"></h4>
+                            <div class="typed-text d-none">Front End Developer, React Developer, MERN Stack Developer, Web Developer</div>
+                          </div>
+                          
+                          <div class="d-flex justify-content-center custom-gap-top mb-3">
                             <a class="btn btn-secondary btn-square mx-1" href="https://github.com/Elilchandran" target="_blank"><i class="fab fa-github"></i></a>
                             <a class="btn btn-secondary btn-square mx-1" href="https://www.linkedin.com/in/elilarasi-s-r-88b128232/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                            <a style="color: #D79922 !important; font-size: large;" href="https://jovial-brigadeiros-20ded3.netlify.app/" target="_blank">
-                              <i class="fas fa-globe"></i> Resume site
-                            </a>
-                            <a style="color: #D79922 !important; font-size: large;" href="https://drive.google.com/file/d/1YIOentP-OKyph2-yxVkoWrLfBHQ_DrUP/view" class="blink-text" target="_blank">
+                            <a class="btn btn-secondary btn-square mx-1" href="https://wa.me/8300887102" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a class="btn btn-secondary btn-square mx-1" href="mailto:elilchandran@gmail.com"><i class="fas fa-envelope"></i></a>
+                          </div>
+                          
+                        
+                        <div class="d-flex align-items-end justify-content-center border-top">
+
+                            <a style="color: #f8aa03 !important; font-size:larger; font-style: bold;" href="https://drive.google.com/file/d/13Fq08VN-rbDls20wzIFo15byC3loG3v6/view" class="blink-text" target="_blank">
                               <i class="fas fa-download"></i> Download Resume(pdf)
                             </a>
                         </div>
@@ -191,9 +81,9 @@
                 <div class="col-lg-8" >              <!--background of main page-->
                     <!-- About Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" >
-                        <h1 class="title pb-3 mb-3"  style="color: #263567;">About Me</h1>
+                        <h1 class="title pb-3 mb-3"  style="color: #0a0a09;">About Me</h1>
                             <section>
-                                <p class='changeMargin' style="text-align: justify;color: black;" >
+                                <p class='changeMargin' style="text-align: justify;color: rgb(12, 11, 11);" >
                                
                                      Aspiring Full Stack Developer with a strong dedication to crafting innovative solutions. Coming from a diverse background,
                                      I completed my Full Stack Development Course at Guvi. This unique journey, coupled with my expertise from a different field,
@@ -461,138 +351,137 @@
                  
 
                   <!-- Portfolio Start -->
-                  <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="title pb-3 mb-5" style="color: #263567;">Projects</h1>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-12 text-center mb-2">
-                                    <ul class="list-inline mb-4" id="portfolio-flters">
-                                        <li class="btn btn-secondary active"  data-filter="*"><i class="fa fa-star me-2"></i>All</li>
-                                        <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i>Front End</li>
-                                        <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i>End to End</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row portfolio-container">
-                                <div class="col-md-6 mb-4 portfolio-item first">
-                                    <div>
-                                        <h6 style="text-align:center; color: #511992;">FACE DETECTION & GENDER RECOGNITION -</h6>
-                                    </div>
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/pic1r.png" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/pic1.png" href="img/pic1rr.png" data-lightbox="portfolio">
-                                                <i class="bi bi-plus text-light"></i>
-                                            </a>
-                                            
-                                        </div>
-                                    </div>
-                                     <!-- Add source code and deploy links here -->
-                                     <div class="portfolio-links text-center mt-2">
-                                        <a href="https://github.com/Elilchandran/gender-demographics-recognition.git" target="_blank" class="btn btn-secondary" style="background-color: rgb(41, 53, 49);">Source Code</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="https://frabjous-blancmange-3e1da0.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 portfolio-item second">
-                                    <div>
-                                        <h6 style="text-align:center; color: #511992;">STUDENT TASK SUBMISSION PORTAL -</h6>
-                                    </div>
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/pic4r.png" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/pic4.png" data-lightbox="portfolio">
-                                                <i class="bi bi-plus text-light"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Add source code and deploy links here -->
-                                    <div class="portfolio-links text-center mt-2">
-                                        <a href="https://github.com/Elilchandran/project_name_frontend.git" target="_blank" class="btn btn-secondary" style="background-color: rgb(41, 53, 49);">Source Code</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="https://celadon-twilight-cafa74.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 portfolio-item first">
-                                    <div>
-                                        <h6 style="text-align:center;color: #511992;">CHARACTER PORTFOLIO: THRONES EDITION -</h6>
-                                    </div>
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/pic3.png" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/picl.png" data-lightbox="portfolio">
-                                                <i class="bi bi-plus text-light"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Add source code and deploy links here -->
-                                    <div class="portfolio-links text-center mt-2">
-                                        <a href="https://github.com/Elilchandran/Game-of-Thrones.git" target="_blank" class="btn btn-secondary" style="background-color: rgb(41, 53, 49);">Source Code</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="https://sage-tulumba-48ad56.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-5 mb-4 portfolio-item first">
-                                    <div>
-                                        <h6 style="text-align:center;color: #511992;">FREE GOOGLE eBOOKS-</h6>
-                                    </div>
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/pic5.png" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/pic5r.png" data-lightbox="portfolio">
-                                                <i class="bi bi-plus text-light"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Add source code and deploy links here -->
-                                    <div class="portfolio-links text-center mt-2">
-                                        <a href="https://github.com/Elilchandran/Google-Book.git" target="_blank" class="btn btn-secondary" style="background-color: rgb(41, 53, 49);">Source Code</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="https://celadon-unicorn-97f734.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 portfolio-item second">
-                                    <div>
-                                        <h6 style="text-align:center;color: #511992;">MENTOR-STUDENT PORTAL -</h6>
-                                    </div>
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/pic2.png" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/pic2r.png" data-lightbox="portfolio">
-                                                <i class="bi bi-plus text-light"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Add source code and deploy links here -->
-                                    <div class="portfolio-links text-center mt-2">
-                                        <a href="https://github.com/Elilchandran/mentors_students.git" target="_blank" class="btn btn-secondary" style="background-color: rgb(41, 53, 49);">Source Code</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="https://silver-squirrel-b4f7b3.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4 portfolio-item first">
-                                    <div>
-                                        <h6 style="text-align:center;color: #511992;">BOTCOMPANION HUB -</h6>
-                                    </div>
-
-
-                                    
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/pic33r.png" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/pic33.png" data-lightbox="portfolio">
-                                                <i class="bi bi-plus text-light"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Add source code and deploy links here -->
-                                    <div class="portfolio-links text-center mt-2">
-                                        <a href="https://github.com/Elilchandran/robot.git" target="_blank" class="btn btn-secondary" style="background-color: rgb(41, 53, 49);">Source Code</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="https://visionary-conkies-5130af.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
-                                    </div>
-                                </div>
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class="title pb-3 mb-5">Projects</h1>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 text-center mb-2">
+                        <ul class="list-inline mb-4" id="portfolio-flters">
+                            <li class="btn btn-secondary active" data-filter="*"><i class="fa fa-star me-2"></i>All</li>
+                            <li class="btn btn-secondary" data-filter=".first"><i class="fa fa-laptop-code me-2"></i>Front End</li>
+                            <li class="btn btn-secondary" data-filter=".second"><i class="fa fa-mobile-alt me-2"></i>End to End</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    <!-- Portfolio Item 1 -->
+                    <div class="col-md-6 mb-4 portfolio-item first">
+                        <div>
+                            <h6 class="portfolio-title">FACE DETECTION & GENDER RECOGNITION -</h6>
+                        </div>
+                        <div class="position-relative overflow-hidden mb-2">
+                            <img class="img-fluid w-100" src="img/pic1r.png" alt="Face Detection & Gender Recognition">
+                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                <a href="img/pic1.png" data-lightbox="portfolio">
+                                    <i class="bi bi-plus text-light"></i>
+                                </a>
                             </div>
                         </div>
-
-
+                        <div class="portfolio-links text-center mt-2">
+                            <a href="https://github.com/Elilchandran/gender-demographics-recognition.git" target="_blank" class="btn btn-secondary">Source Code</a>
+                            <a href="https://frabjous-blancmange-3e1da0.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
+                        </div>
                     </div>
-                </section><br><br>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="col-md-6 mb-4 portfolio-item second">
+                        <div>
+                            <h6 class="portfolio-title">STUDENT TASK SUBMISSION PORTAL -</h6>
+                        </div>
+                        <div class="position-relative overflow-hidden mb-2">
+                            <img class="img-fluid w-100" src="img/pic4r.png" alt="Student Task Submission Portal">
+                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                <a href="img/pic4.png" data-lightbox="portfolio">
+                                    <i class="bi bi-plus text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-links text-center mt-2">
+                            <a href="https://github.com/Elilchandran/project_name_frontend.git" target="_blank" class="btn btn-secondary">Source Code</a>
+                            <a href="https://celadon-twilight-cafa74.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="col-md-6 mb-4 portfolio-item first">
+                        <div>
+                            <h6 class="portfolio-title">CHARACTER PORTFOLIO: THRONES EDITION -</h6>
+                        </div>
+                        <div class="position-relative overflow-hidden mb-2">
+                            <img class="img-fluid w-100" src="img/pic3.png" alt="Character Portfolio: Thrones Edition">
+                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                <a href="img/picl.png" data-lightbox="portfolio">
+                                    <i class="bi bi-plus text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-links text-center mt-2">
+                            <a href="https://github.com/Elilchandran/Game-of-Thrones.git" target="_blank" class="btn btn-secondary">Source Code</a>
+                            <a href="https://sage-tulumba-48ad56.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="col-md-6 mb-4 portfolio-item first">
+                        <div>
+                            <h6 class="portfolio-title">FREE GOOGLE eBOOKS -</h6>
+                        </div>
+                        <div class="position-relative overflow-hidden mb-2">
+                            <img class="img-fluid w-100" src="img/pic5.png" alt="Free Google eBooks">
+                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                <a href="img/pic5r.png" data-lightbox="portfolio">
+                                    <i class="bi bi-plus text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-links text-center mt-2">
+                            <a href="https://github.com/Elilchandran/Google-Book.git" target="_blank" class="btn btn-secondary">Source Code</a>
+                            <a href="https://celadon-unicorn-97f734.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 -->
+                    <div class="col-md-6 mb-4 portfolio-item second">
+                        <div>
+                            <h6 class="portfolio-title">MENTOR-STUDENT PORTAL -</h6>
+                        </div>
+                        <div class="position-relative overflow-hidden mb-2">
+                            <img class="img-fluid w-100" src="img/pic2.png" alt="Mentor-Student Portal">
+                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                <a href="img/pic2r.png" data-lightbox="portfolio">
+                                    <i class="bi bi-plus text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-links text-center mt-2">
+                            <a href="https://github.com/Elilchandran/mentors_students.git" target="_blank" class="btn btn-secondary">Source Code</a>
+                            <a href="https://silver-squirrel-b4f7b3.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 -->
+                    <div class="col-md-6 mb-4 portfolio-item first">
+                        <div>
+                            <h6 class="portfolio-title">BOTCOMPANION HUB -</h6>
+                        </div>
+                        <div class="position-relative overflow-hidden mb-2">
+                            <img class="img-fluid w-100" src="img/pic33r.png" alt="Botcompanion Hub">
+                            <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                                <a href="img/pic33.png" data-lightbox="portfolio">
+                                    <i class="bi bi-plus text-light"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-links text-center mt-2">
+                            <a href="https://github.com/Elilchandran/robot.git" target="_blank" class="btn btn-secondary">Source Code</a>
+                            <a href="https://visionary-conkies-5130af.netlify.app/" target="_blank" class="btn btn-primary">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
                 <!-- Portfolio End -->
 
                     <!-- Testimonial Start -->
@@ -667,7 +556,7 @@
 
             <!-- Contact Start -->
             <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
-                <h1 class="title pb-3 mb-2" style="color: #d79922;">Contact Me</h1>
+                <h1 class="title pb-3 mb-2" style="color: #d79922;">Let's Connect</h1>
                 <p class="mb-4"></p>
                 <form id="contactForm" action="http://localhost:3000/submit-form" method="post">
                     <div class="row g-3">
@@ -708,7 +597,7 @@
                         </div>
 
 
-                        <div id="response" class="mt-3 text-center" style="padding: 10px; color: #ebe4e4; background-color: #16121d; border-radius: 3px;">
+                        <div id="response" class="mt-3 text-center" style="padding: 10px; color: #ebe4e4; background-color: #1e1a1f 1%; border-radius: 3px;">
                             <h1 ></h1>
                         </div>
 
